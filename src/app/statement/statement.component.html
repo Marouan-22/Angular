@@ -1,5 +1,7 @@
 <div class="statement">
-    <button type="button" (click)="addMessage()">+</button><input />
-    
+    {{titel}}
+    <button type="button" (click)="addMessage(messInput.value)">+</button><input #messInput/>
+    <message *ngFor="let i of messagList" [tekst]="i"></message>
+<ng-content></ng-content>
     <!-- <ng-content class="content"></ng-content> -->
 </div>

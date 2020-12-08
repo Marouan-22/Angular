@@ -3,7 +3,8 @@
 >>>{{parameterValue|json}}<<<
 <button (click)="goBack()">go back</button>
 ====
-<statement *ngFor="let i of numlist">{{i}}</statement>
+<statement *ngFor="let i of columnlist" [titel]="i"></statement>
+
 ____
 <!-- <statement>
     <h2>Neutraal</h2>

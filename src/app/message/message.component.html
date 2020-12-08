@@ -1,5 +1,8 @@
-<div class="message">
-<div class="Text"><ng-content></ng-content></div>
-<button>Up vote</button>
-<button>Down vote</button>
+<div class="message" >
+    
+<div class="Text">{{tekst}}</div>
+<ng-content></ng-content>
+<button (click)="Up()">Up vote</button>{{counterUp}}
+<button (click)="Down()">Down vote</button>{{counterDown}}
+<button>Delete</button>
 </div>

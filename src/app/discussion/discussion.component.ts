@@ -10,7 +10,8 @@ interface statement {
 @Component({
   selector: 'app-discussion',
   templateUrl: './discussion.component.html',
-  styleUrls: ['./discussion.component.scss']
+  styleUrls: ['./discussion.component.scss'],
+
 })
 export class DiscussionComponent implements OnInit {
 
@@ -23,7 +24,7 @@ export class DiscussionComponent implements OnInit {
 
   }
   object: statement[] = []; 
-  numlist: number[] = [1,2,3];
+  columnlist: string[] = ['pro','neutral','con'];
   goBack(): void {
     this.location.back();
   }
