@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { Statement } from '@angular/compiler';
+
+interface statement {
+  text:string
+}
 
 @Component({
   selector: 'app-discussion',
@@ -14,8 +19,11 @@ export class DiscussionComponent implements OnInit {
   constructor(
     public route: ActivatedRoute,
     private location: Location
-  ) { }
+  ) { 
 
+  }
+  object: statement[] = []; 
+  numlist: number[] = [1,2,3];
   goBack(): void {
     this.location.back();
   }

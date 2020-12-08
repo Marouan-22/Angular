@@ -18,6 +18,6 @@ export class StatementComponent implements OnInit {
 
   addMessage(){
 
-    document.getElementsByClassName("content")[0].innerHTML += '<message></message>' ;
+    
  }
 }

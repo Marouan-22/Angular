@@ -2,13 +2,10 @@
 {{route}}<br>
 >>>{{parameterValue|json}}<<<
 <button (click)="goBack()">go back</button>
-
-<statement>
-    <h2>PRO</h2>
-    <message>Marouan</message>
-    <message>Was</message>
-</statement>
-<statement>
+====
+<statement *ngFor="let i of numlist">{{i}}</statement>
+____
+<!-- <statement>
     <h2>Neutraal</h2>
     <message>Hier</message>
     <message>Jorne</message>
@@ -17,4 +14,4 @@
     <h2>CON</h2>
     <message>Mss</message>
     <message>Ook</message>
-</statement>
+</statement> -->
