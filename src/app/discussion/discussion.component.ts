@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Statement } from '@angular/compiler';
+import { WebService } from '../web.service';
 
 interface statement {
   text:string
@@ -19,7 +20,8 @@ export class DiscussionComponent implements OnInit {
 
   constructor(
     public route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private http: WebService
   ) { 
 
   }
@@ -36,5 +38,7 @@ export class DiscussionComponent implements OnInit {
     })
 
   }
-
+test(){
+  this.http.go().subscribe(()=>{console.log("blabla")})
+}
 }
